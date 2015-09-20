@@ -1,0 +1,234 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* define element standards */
+
+body {
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	color: #34343E;
+	text-align: center;
+	padding-bottom: 15%;
+	line-height: 1.25;
+	font-weight: 100;
+}
+h1 {
+	font-family: "Sacramento",cursive;
+	color: #f1544a;
+	font-size: 6.854em;
+	/* 109.656 * 16 */
+	line-height: .6;
+}
+h2 {
+    font-size: 2.618em;
+	/* 41.887 / 16 */
+}
+h3 {
+    font-size: 1.618em;
+/* 25.888 / 16 */
+}
+h4 {
+    font-size: 1em;
+}
+h5{
+	font-size: 1em;
+	}
+h6{
+	font-size: .75em;
+}
+p {
+    font-size: 1em;
+}
+ul {
+	list-style: none;
+}
+li {
+	display: inline;
+}
+a {
+	text-decoration: none;
+	color: #f1544a;
+}
+*{
+	margin: 0;
+}
+/* Write your CSS styles here */
+html, body{
+	height: 100%;
+}
+.wrapper{
+min-height: 100%;
+position: relative;
+}
+.navbar {
+	background-color: none;
+	position: static;
+	z-index: 9999;
+	width: 100%;
+	height: 14%;
+}
+.header-logo{
+	margin: 1.5% 5%;
+	float: left;
+}
+.menu-links{
+	float: right;
+	margin: 2.5% 5%;
+}
+.navbar a{
+	font-size: 1.6175em;
+	/* 25.88 * 16 */
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+.navbar a{
+	color: #34343E;
+	margin: 0 10px 0 10px;
+}
+.main{
+	display: table;
+ 	background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center;  
+    min-width: 100%;
+    height: 100vh;
+    font-weight: 100;
+}
+.navbar a:hover{
+	color: #f1544a;
+}
+.entry-1{
+	margin-left: 10%;
+}
+.syllabi{
+	width: 33%;
+	float: left;	
+}
+.syllabi img{
+	max-width: 100%;
+}
+.syllabi-copy{
+	width: 25%;
+	float: left;
+	margin: 17.5% 1.5%;
+}
+.syllabi-title{
+	font-weight: 700;
+}
+.syllabi-date{
+	font-weight: 700;
+	color: #F1544A;
+}
+.main{
+	position: relative;
+}
+.main-copy{
+	width: 50%;
+	margin: 2.5% auto;
+	font-weight: 100;
+	font-style: italic;
+}
+.divider{
+	background-color: #F1544A;
+	width: 80%;
+	height: .5%;
+	margin: 2em auto;
+}
+.footer-container{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #F15444A;
+	clear: both;
+}
+.copyright{
+	float: left;
+	margin: 0 2.5%;
+}
+.social{
+	float: right;
+	margin: 0 2.5%;
+}
+.social li{
+	margin: 15px;
+}
+@media  (max-width: 760px){
+p {
+    font-size: .809em;
+}
+.entry-1{
+	margin-left: 0;
+}
+.header-logo{
+	margin: 1.5% auto;
+	float: none;
+}
+.menu-links{
+	float: none;
+	margin: 2.5% 5%;
+}
+.syllabi, .syllabi-copy{
+	float: none;
+}
+.syllabi {
+	width: 50%;
+	margin: 10% auto 0 auto;
+}
+.syllabi-copy{
+	width: 45%;
+	margin: 1.5% auto;
+	}
+.copyright{
+	float: none;
+	margin: 2.5% auto;
+}
+.social{
+	float: none;
+	margin: 2.5% auto;
+}
+}
