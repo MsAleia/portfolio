@@ -1,0 +1,328 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* define element standards */
+html, body{
+	height: 100%;
+	text-align: center;
+	font-size: 25.88px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+header, .footer{
+	height: 10%;
+}
+header{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: dimgray;
+	font-size: 1.5em;
+}
+header img, .footer img{
+	width: 40px;
+	height: 40px;
+}
+.divider {
+	height: .125em;
+	width: 80%;
+	background-color: dimgray;
+	clear: both;
+	margin: 10% auto;
+}
+.grid img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.wrapper{
+	position: absolute;
+}
+header ul{
+	font-size: .5em;
+	margin: 5% 0;
+}
+ul{ 
+	padding: 0;
+}
+ul li{
+	display: block;
+}
+.name, .title{
+	display: none;
+}
+
+#photo1{
+	width: 100%;
+}
+#photo2, #photo3{
+	width: 50%;
+	float: left;
+}
+.row-1-a{
+	width: 100%;
+}
+#photo5{
+	float: none;
+	width: 50%;
+	margin: 0 auto;
+}
+#photo6{
+	float: none;
+	width: 100%;
+}
+.row-2-a{
+	width: 100%;
+}
+#facebook, #twitter{
+	width: 50%;
+	float: left;
+	position: relative;
+}
+button{
+	position: absolute;
+	background-color: white;
+	 moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+ 	border: 1px solid white;
+	color: mediumblue;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	top: 55%;
+	left: 50%;
+	font-size: .5em;
+	padding: .5em;
+	text-transform: uppercase;
+}
+#photo7, #photo8{
+	float: none;
+	width: 100%;
+}
+.footer-wrapper{
+	font-size: .5em;
+}
+.footer-space{
+	height: 2.5em;
+}
+.footer-wrapper{
+	background-color: dimgrey;
+	font-size: .75em;
+}
+.footer{
+	clear: both;
+	width: 100%;
+	overflow: auto;
+	color: white;
+}
+@media (min-width:768px) {
+header ul{
+	font-size: 1em;
+}
+ul{ 
+	list-style-type: none;
+	padding: 2.5% 0;
+}
+ul li{
+	display: inline-block;
+	margin: 0 5%;
+}
+li img{
+	width: 40px;
+	height: 40px;
+}
+.divider{
+	margin: 2.5% auto;
+}
+.grid{
+	position: relative;
+	width: 80%;
+	line-height: 0;
+	margin: 5% 0 5% 14%;
+}	
+#photo1{
+	width: 45%;
+	position: relative;
+}
+.name, .title, button {
+	display: block;
+}
+.title{
+	margin: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	color: white;
+	white-space: nowrap;
+}
+.name{
+	position: absolute;
+	color: white;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+#photo1-title{
+	top: 65%;
+	left: 50%;
+	font-size: 1em;
+}
+#photo1-name{
+	top: 72.5%;
+	left: 50%;
+	font-size: 2em;
+}
+#photo2-title{
+	top: 50%;
+	left: 50%;
+	font-size: 1em;
+}
+#photo2-name{
+	top: 60%;
+	left: 50%;
+	font-size: 1.25em;
+}
+#photo4-title{
+	top: 50%;
+	left: 50%;
+	font-size: 1.25em;
+}
+#photo5-title{
+	top: 65%;
+	left: 50%;
+	font-size: 1.25em;
+}
+#photo6-title{
+	top: 65%;
+	left: 50%;
+	font-size: 1em;
+}
+#photo6-name{
+	top: 72.5%;
+	left: 50%;
+	font-size: 1.5em;
+}
+#facebook-title{
+	top: 40%;
+	left: 50%;
+	font-size: 1.25em;
+}
+#facebook-name{
+	top: 52.5%;
+	left: 50%;
+	font-size: .75em;
+}
+#twitter-title{
+	top: 40%;
+	left: 50%;
+	font-size: 1.25em;
+}
+#twitter-name{
+	top: 52.5%;
+	left: 50%;
+	font-size: .75em;
+}
+#photo7-title{
+	top: 60%;
+	left: 50%;
+	font-size: 1em;
+}
+#photo7-name{
+	top: 75%;
+	left: 50%;
+	font-size: 1.5em;
+}	
+#photo8-title{
+	top: 60%;
+	left: 50%;
+	font-size: 1em;
+}
+#photo8-name{
+	top: 75%;
+	left: 50%;
+	font-size: 1.5em;
+}
+.row-1-a{
+	width: 45%;
+}
+#photo1, .row-1-a{
+	float: left;
+}
+#photo2, #photo3{
+	float: left;
+	width: 50%;
+	position: relative;
+}
+#photo4{
+	clear: both;
+	position: relative;
+}
+#photo5{
+	width: 22.5%;
+	position: relative;
+}
+#photo6{
+	width: 45%;
+	position: relative;
+}
+.row-2-a{
+	width: 22.5%;
+}
+#photo5, #photo6, .row-2-a{
+	float: left;
+}
+#photo7, #photo8{
+	float: left;
+	width: 45%;
+	position: relative;
+}
+#facebook, #twitter{
+	position: relative;
+	float: none;
+	width: 100%;
+}
+.footer-space{
+	height: 1.25em;
+}
+}

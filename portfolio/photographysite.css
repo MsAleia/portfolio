@@ -1,0 +1,174 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+h1 {
+    font-size: 4.235625em;
+    /* 67.77 / 16*/
+}
+h2 {
+    font-size: 2.6175em;
+	/* 41.88 / 16 */
+}
+h3 {
+    font-size: 1.6175em;
+/* 25.88 / 16 */
+}
+h4 {
+    font-size: 1em;
+}
+h5{
+	font-size: 1em;
+	}
+h6{
+	font-size: .75em;
+}
+p {
+    font-size: 1em;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+/* define element standards */
+html, body{
+	height: 100%;
+	font-family: "Raleway";
+	color: white;
+	background-color: #C6C5C3;
+}
+ul {
+	list-style: none;
+}
+li {
+	display: inline;
+}
+header, footer{
+	background-color: #565D6C;
+	height: 12.5%;
+}
+
+.border-copy{
+	text-align: center;
+	font-weight: 100;
+	font-size: 2em;
+	padding: .5em;
+}
+.header-title{
+	font-family: "Josefin Slab";
+	color: #3DD58B;
+}
+#photo-wrapper{
+	position: relative;
+	text-align: center;	
+	margin: 1.5% 0 1.5% 0;
+}
+.block{ 
+	height: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.heart{
+	color: #f1544a;
+}
+.block-large{
+	display: none;
+}
+footer{
+	clear: both;
+	width: 100%;
+	overflow: auto;
+	}
+.footer-wrapper{
+	position: absolute;
+}
+.footer-content, .social{
+	width: 100%;
+}
+.footer-content{
+	padding: 1em 0 0 0;
+}
+.footer-copy{
+	font-size: .8em;
+	font-weight: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 768px){
+.border-copy{
+	text-align: center;
+	font-weight: 500;
+	font-size: 3.235625em;
+	padding: .2em;
+}
+.footer-content, .social{
+	width: 30%;
+	float: left;
+}
+.footer-content{
+	padding: 1em 0 0 0;
+	margin: 0 15% 0 10%;
+	}
+.social{
+	margin: 0 0 0 5%;
+}
+.social-content{
+	padding: 1em 0 0 0;
+	text-align: center;
+}
+.footer-copy{
+	font-weight: 100;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
