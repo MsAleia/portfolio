@@ -1,0 +1,85 @@
+/*
+Theme Name: Longform Child
+Theme URI: ttp://cohhe.com/project-view/longform/
+Description: Child theme for Longform
+Author: Cohhe
+Author URI: http://cohhe.com/
+Version: 1.0.2
+Template: longform
+*/
+
+@import "../longform/style.css";
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:300italic,400,600);
+
+body{
+	font-family: "Open Sans", sans-serif;
+}
+/*changes all #f1544a to #33cc99*/
+a:active,
+a:hover, h2.aesop-collection-entry-title:hover, 
+.menu-toggle a:hover span em, .site-header .navbar-toggle:hover span.icon-bar,
+.aesop-documument-component a:hover span, .site-content article .entry-header .entry-title a:hover, .container.without_thumbnail .entry-meta a, .container.without_thumbnail .entry-meta a,
+.intro-effect-fadeout .intro-effect-bg-img-container .entry-meta a,
+.site-content article .entry-header div.entry-meta a{
+	color:#33CC99;
+}
+h1{
+	font-family: "Libre Baskerville", serif;
+	color: #34343E;
+}
+
+/* changes all #09c to #33cc99*/
+a, button, html input[type="button"], input[type="reset"],
+input[type="submit"],  .site-navigation ul.sub-menu > li.has-description > a:hover > span, .site-navigation .sub-menu a:hover span, h2.aesop-collection-entry-title, .aesop-documument-component a span, .author-info .author-bio a, .site-info a:hover {
+	color: #33CC99;
+}
+button, html input[type="button"], input[type="reset"],
+input[type="submit"] {
+	background-color: #34343E;
+}
+#wp-calendar tbody td.dayWithPost a:hover {
+	color: #33CC99;
+}
+.sticky{
+	border-top: #33CC99;
+}
+.entry-content .tiled-gallery-caption, .site-navigation > div > ul > li > a:after, .site-header .icon-bar, .tagcloud a, #wp-calendar td#prev a:hover,
+#wp-calendar td#next a:hover, .entry-content .page-links a:hover,
+.pagination a:hover {
+	background-color: #33CC99;
+}
+.search-toggle {
+	background-color: #34343E;
+	border-bottom: 2px solid #33CC99;
+}
+.menu-toggle span em, .header-main.header-menu-active .menu-toggle em:first-child, .header-main.header-menu-active .menu-toggle em:last-child, footer.entry-meta .tag-links a:hover, .site-footer-wrapper .scroll-to-top, div.wpcf7-validation-errors,
+.error,
+div.wpcf7-mail-sent-ok {
+	background: #33CC99;
+}
+.site-navigation .sub-menu .menu-item-has-children > a {
+	border-left: 2px solid #33CC99;
+}
+footer.entry-meta .tag-links a:hover, .entry-content .page-links > span:not(.page-links-title),
+.pagination span.page-numbers.current {
+	background: #33CC99;
+	border-color: #33CC99;
+}
+.widget h3.widget-title {
+	border-bottom: 3px solid #33CC99;
+}
+article.hentry .post-edit-link:hover,
+.comment-reply-link:hover, article.hentry .post-edit-link:hover,
+.comment-reply-link:hover  {
+	border: 1px solid #33CC99;
+	background-color: #33CC99;
+}
+article.hentry .more-link:hover::before,
+article.hentry .more-link:focus::before {
+	color: #33CC99;
+	text-shadow: 13px 0 #33CC99, -13px 0 #33CC99;
+}
+.site-info {
+	border-top: 2px solid #33CC99;
+}
+/* changes all #09c to #33cc99 end*/
