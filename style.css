@@ -144,7 +144,7 @@ position: relative;
     height: 100vh;
 }
 #home-wrapper {
-   background-image: url('portfolio/photos/hero_new.jpg');
+   background-image: url('photos/hero_new.jpg');
 }
 .layer {
     background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(0,0,0,.6));
@@ -157,7 +157,7 @@ position: relative;
     height: 100vh;
 }
 #contact-container{
-    background-image: url('portfolio/photos/contact_image.jpg');
+    background-image: url('photos/contact_image.jpg');
     color: white;
 }
 #work-container{
