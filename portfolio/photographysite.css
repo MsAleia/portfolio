@@ -109,7 +109,6 @@ header, footer{
 }
 .block{ 
 	height: 50%;
-	box-sizing: border-box;
 	display: inline-block;
 }
 img{
