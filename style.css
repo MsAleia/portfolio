@@ -47,45 +47,17 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 input, select { vertical-align: middle; }
 
 /* define element standards */
-
+html, body{
+	height: 100%;
+}
 body {
-	font-size: 1em;
-	font-family: 'Lato', sans-serif;
-	padding-bottom: 15%;
-	line-height: 1.25;
-}
-h1 {
-	font-family: "Sacramento",cursive;
-	color: #f1544a;
-	font-size: 6.854em;
-	/* 109.656 * 16 */
-	line-height: .6;
-}
-h2 {
-    font-size: 2.618em;
-	/* 41.887 / 16 */
-}
-h3 {
-    font-size: 1.618em;
-/* 25.888 / 16 */
-}
-h4 {
-    font-size: 1em;
-}
-h5{
-	font-size: 1em;
-	}
-h6{
-	font-size: .75em;
-}
-p {
+	padding-bottom: 10%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
     font-size: 1em;
 }
 ul {
 	list-style: none;
-}
-li {
-	display: inline;
 }
 a {
 	text-decoration: none;
@@ -94,67 +66,21 @@ a {
 *{
 	margin: 0;
 }
-/* Write your CSS styles here */
-html, body{
-	height: 100%;
-}
 .wrapper{
-min-height: 100%;
-position: relative;
+    min-height: 100%;
+    position: relative;
 }
-.navbar {
-	background-color: none;
-	position: static;
-	z-index: 9999;
-	width: 100%;
-	height: 14%;
-}
-.header-logo{
-	margin: 1.5% 5%;
-	float: left;
-}
-.menu-links{
-	float: right;
-	margin: 2.5% 5%;
-}
-.navbar a{
-	font-size: 1.6175em;
-	/* 25.88 * 16 */
-	font-family: 'Lato', sans-serif;
-	text-decoration: none;
-}
-.navbar a{
-	color: #34343E;
-	margin: 0 10px 0 10px;
-}
-.navbar a:hover{
-	color: #f1544a;
-}
-.new {
-	font-style: italic;
-	font-weight: 700;
-	color: #f1544a;
-}
+/* layout specific CSS */
 #home-wrapper, #contact-container, #about-container, #work-container{
 	display: table;
- 	background-size: cover;                     
+ 	background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;  
+    background-position: center center;
     min-width: 100%;
     height: 100vh;
 }
 #home-wrapper {
    background-image: url('photos/hero_new.jpg');
-}
-.layer {
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(0,0,0,.6));
- 	background-size: cover;                     
-    background-repeat: no-repeat;
-    background-position: center center; 
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100vh;
 }
 #contact-container{
     background-image: url('photos/contact_image.jpg');
@@ -163,11 +89,71 @@ position: relative;
 #work-container{
 	background-color: #34343E;
 }
-.work-header{
-	color: white;
-	text-align: center;
-	margin: 5% 0 0 0;
+/* menu*/
+.menu li{
+    font-size: 1.618em;
+    color: white;
 }
+.menu-links li:hover{
+    color: #f1544a;
+}
+.navbar a{
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+/* menu end */
+/* copy */
+.header-name{
+    font-family: "Sacramento", cursive;
+    color: #f1544a;
+    font-size: 4.8em;
+    line-height: .5;
+}
+.header-copy{
+    font-weight: 500;
+    font-size: 1.6175em;
+}
+.home-copy{
+    margin: 45% auto;
+    clear: both;
+}
+.about-title, .work-header, .contact-header {
+    font-size: 2.618em;
+    font-family: "Libre Baskerville", serif;
+    clear: both;
+}
+.about-copy {
+    font-weight: 100;
+}
+.about-copy-bio{
+    width: 90%;
+    margin: 5%;
+    font-weight: 100;
+    font-size: 1.618em;
+}
+.work-header{
+    color: white;
+}
+.contact-header{
+    color: #f1544a;
+}
+.contact-copy{
+    margin: 20% auto;
+}
+.contact-copy h3{
+    width: 75%;
+    margin: auto;
+    font-size: 1.618em;
+}
+.bold, .italic{
+    color: #f1544a;
+    weight: 500;
+}
+.italic{
+    font-style: italic;
+}
+/* copy end */
+/* jQuery plugin start */
 .gridder{
 	list-style-type:none;
 	width: 98%;
@@ -177,8 +163,8 @@ position: relative;
 	display:inline-block;
 	vertical-align:center;
 	cursor:pointer;
-	width: 31.8333%;
-	margin: .5%;
+	width: 95%;
+	margin: 1% 2.5%;
 }
 .gridder-list img{
 	max-width: 100%;
@@ -232,301 +218,137 @@ position: relative;
 .col-sm-6 img{
 	max-width: 100%;
 }
-.home-copy{
-	margin: 19% 20%;
-	width: 60%;
-	line-height: .9;
-	position: absolute;
-	z-index: 9999;
-	text-align: center;
-}
-.about-title, .work-header, .contact-header {
-	font-size: 4.235625em;
-    /* 67.77 / 16*/
-     font-family: "Libre Baskerville", serif;
-}
-.header-title, .header-skills{
-	font-family: "Lato", sans-serif;
-	color: #34343E;
-    font-size: 1.6175em;
-}
-#about-container{
-	color: #34343E;
-	text-align: center;
-}
-.about-copy{
-	width: 90%;
-	margin: 2.55% auto;
-}
-.about-copy a{
-	text-decoration: none;
-	color: #F1544A;
-}
-.verse{
-	font-weight: 100;
-}
-.about-copy-bio{
-	font-weight: 300;
-	font-size: 1.309em;
-/* 20.944px / 16*/
-} 
-.contact-copy{
-	margin-top: 10%;
-	float: right;
-	text-align: right;
-	margin-right: 15%;
-	max-width: 40%;
-	color: white;
-}
-.contact-header{
-	color: #f1544a;
-}
-.logo-signature{
-	margin-left: auto;
-	margin-right: auto;
-	display: block; 
-}
-.bold, .italic{
-	color: #f1544a;
-	font-weight: 700;
-}
-.italic{
-	font-style: italic;
-}
-.letter-signature{
-	color: white;
-	font-weight: 300;
-}
+/* jQuery plugin end */
+/* footer */
 .footer-container{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background: none;
-	color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .copyright{
-	float: left;
-	margin: auto 2.5%;
+    width: 95%;
+    margin: 2.5% auto;
+    font-weight: 500;
+    color: #34343E;
 }
 .social{
-	float: right;
-	margin: auto 1.5% 1% 1.5%;
+	margin: 2.5% auto;
 }
 .social li{
 	margin: 15px;
+    display: inline;
 }
-/*media queries start*/
-
-@media  (min-width: 1380px){
-h1 {
-    font-size: 4.87096875em;
-    /* 67.77 / 16*15% */
-     font-family: "Libre Baskerville", serif;
-}
-h2 {
-    font-size: 3.010125em;
-	/* 41.88 / 16  *15%*/
-}
-h3 {
-    font-size: 1.860125em;
-/* 25.88 / 16 *15% */
-}
-h4 {
-    font-size: 1.15em;
-    / 1 *15% */
-}
-h5{
-	font-size: 1.15em;
-	 / 1 *15% */
-	}
-h6{
-	font-size: .8625em;
-	 / .75 *15% */
-}
-p {
-    font-size: 1em;
-     / 1 *15% */
-}
-.home-copy{
-	margin-top: 16%;
-}
+/* footer end */
+@media (min-width: 860px){
+/* menu */
 .header-name{
-	font-family: "Sacramento",cursive;
-	color: #f1544a;
-	font-size: 7.88558594em;
-	/* 109.7125 * 16 *15% */
-	line-height: .5;
+    font-size: 6.854em;
 }
-.about-copy{
-	margin-top: 14%;
-	max-width: 60%;
+.menu{
+    width: 100%;
 }
-.contact-copy{
-	margin-top: 14%;
-	float: right;
-	text-align: right;
-	margin-right: 15%;
-	max-width: 40%;
+.name-logo{
+    float: left;
+    margin: 2.5% 0 0 5%;
 }
+.toggle, .toggle-sub{
+    display: none;
 }
-
-@media  (max-width: 1024px){
-h1 {
-    font-size: 4.236em;
-     font-family: "Libre Baskerville", serif;
+.menu ul{
+    display: inline;
+    float: right;
+    margin: 3.5% auto 2.5% 0;
+    width: 30%;
 }
-h2 {
-    font-size: 2.618em;
+.menu li{
+    margin: 0 1.5%;
+    float: left;
+    list-style: none;
+    color: #34343E;
 }
-h3 {
-    font-size: 1em;
-}
-p {
-    font-size: .618em;
-}
-.new {
-	font-weight: 300;
-}
-.header-logo{
-	margin: 0 auto;
-	float: none;
-}
-.header-name{
-	font-family: "Sacramento",cursive;
-	color: #f1544a;
-	font-size: 6.854em;
-	line-height: .5;
-}
+/*copy*/
 .home-copy{
-	margin: 16% auto 0 auto;
-}
-.about-copy{
-	margin-top: 10%;
-}
-.contact-copy{
-	margin: 14% auto 0 auto;
-	float: none;
-	text-align: center;
-	max-width: 60%;
-}
-.menu-links{
-	float: none;
-	margin: 2.5% 5%;
-}
-.navbar a{
-	font-size: 1.618em;
-	font-family: 'Lato', sans-serif;
-	text-decoration: none;
-}
-.home-copy{
-	width: 90%;
-	margin: 30% auto;
-}
-.gridder-list{
-	width: 48.5%;	
-}
-.col-sm-6{
-	float: none;
-	width: 98%;
-	margin: 1%;
-}
-}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-.navbar{
-	position: relative;
-	height: 20%;
-}
-.home-copy{
-	width: 90%;
-	margin-top: 10%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 5%;
-}
-.header-same, .header-title, .header-skills, .header-inspire{
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-}
-.header-name{
-	font-size: 4.8em;	
-}
-
-.about-copy{
-	margin: 5% 0;
-}
-.verse{
-	color: white;
-}
-.contact-copy{
-	width: 95%;
-	margin-top: 5%;
-	}
-.logo-signature{
-	display: none;
-	}
-	}
-
-@media (max-width: 760px){
-h1 {
-    font-size: 4.236em;
-     font-family: "Libre Baskerville", serif;
-}
-h2 {
-    font-size: 2.618em;
-}
-h3 {
-    font-size: 1em;
-}
-p {
-    font-size: 1em;
+    margin: 20% auto;
 }
 .about-title, .work-header, .contact-header {
-	font-size: 2.618em;
+    font-size: 4.235625em;
     /* 67.77 / 16*/
-     font-family: "Libre Baskerville", serif;
 }
-.navbar{
-	position: relative;
+.about-title, .work-header {
+    margin: 5% auto 0 auto;
 }
-.navbar a{
-	font-size: 1em;
-}
-.header-same, .header-title, .header-skills, .header-inspire{
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-}
-.header-name{
-	font-size: 4.8em;	
-}
-h1{
-	2.82375em;
+.about-copy-bio{
+    margin: 2.5% 5%;
 }
 .contact-copy{
-	width: 95%;
-	margin-top: 25%;
-	}
-.logo-signature{
-	display: none;
+    margin: 10% 5%;
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.contact-copy h3{
+    margin: 2.5% 0;
+    float: right;
 }
 .copyright{
-	float: none;
-	margin: 2.5% auto;
-	width: 80%;
-	font-weight: 700;
+    float: left;
+    margin: 1.5% 2.5%;
+    width: 45%;
+    font-weight: 700;
+    font-size: 1em;
 }
 .social{
-	float: none;
-	margin: auto 1.5% 1% 1.5%;
+    float: right;
+    margin: 1.5% 2.5%;
+    width: 45%;
 }
-.social li{
-	margin: 10px;
+.gridder{
+    width: 100%;
+	margin: 1% 0;
 }
 .gridder-list{
-	width: 98%;
+    	width: 31.8333%;
+    	margin: .5%;
 }
-	}
-	
+}
+@media (max-width: 860px) {
+/* menu */
+.menu{
+    position: relative;
+    display: inline-block;
+}
+.menu-links{
+    display: none;
+}
+.menu li{
+    margin: 1% auto;
+    float: none;
+    display: block;
+    clear: both;
+    font-size: 1.618em;
+}
+.menu-links a{
+    display: block;
+}
+.toggle{
+    margin: 5% auto;
+    float: left;
+    display: inline-block;
+}
+.toggle-sub{
+    margin: 1.5% 2.5%;
+}
+.name-logo{
+    float:left;
+    margin: 4% auto;
+}
+.about-title, .work-header, .contact-header {
+    margin: 0 auto;
+}
+.logo-signature{
+    display: none;
+}
+}
+@media (min-width: 1224px) {
+/* Styles */
+}

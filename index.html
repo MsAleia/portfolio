@@ -11,9 +11,12 @@
     <meta name="author" content="Aleia Walker" >
     <meta name="twitter:description" content="Aleia Walker is a content creator and web designer based in Atlanta. Working everyday to be awesome. And humble.">
     <meta name="google-site-verification" content="gQQqXxQjRcvO8GI_uaeWMnOBWR0NevMHMdl3iNeemPk">
+	<meta name="google-site-verification" content="2Q3EhiI1EMzfTLuxtP6bkZR0B5joKiMYcc5txmQJ0wg" />
     <link rel="icon" href="../../favicon.ico">
 	<title>Aleia Walker</title>
   <link rel="stylesheet" href="style.css">
+
+
   <!--[if gte IE 9]>
   <style>
     .layer {
@@ -27,30 +30,42 @@
 <div class="wrapper">
 	<!-- home div -->
 	<div id="home-wrapper">
-		<nav class="navbar">
-			<div class="header-logo">
-				<img src= 'photos/aleia_logo_small.png' alt='aleia walker logo' title='aleia walker' />
-			</div><!--div header-logo ended-->
+		<nav class="menu">
+				<a class="toggle" href="#"><img src="photos/mini-logo.png" alt="image logo" /></a>
+				<div class="name-logo">
+					<img src= "photos/aleia_logo_small.png" alt="aleia walker logo" title="aleia walker" />
+				</div>
 			<div class="menu-links">
-				<ul class="navbar-header">
-					<li><a href="#home-wrapper">Home</a></li>
-					<li><a href="#about-container">About</a></li>
-					<li><a href="#work-container">Work</a></li>
-					<li><a href="#contact-container">Contact</a></li>
-					<li><a href="http://aleiawalker.com/blog" target="_blank">Blog</a></li>
+				<ul class="menu-inner">
+					<!--<a href="#home-wrapper" class="menu-link">
+						<li>Home</li>
+					</a>-->
+					<a href="#about-container" class="menu-link">
+						<li>About</li>
+					</a>
+					<a href="#work-container" class="menu-link">
+						<li>Work</li>
+					</a>
+					<a href="#contact-container" class="menu-link">
+						<li>Contact</li>
+					</a>
+					<a href="http://aleiawalker.com/blog" target="_blank" class="menu-link">
+						<li>Blog</li>
+					</a>
 				</ul>
 			</div> <!-- menu links end-->
 		</nav>
 		<div class="home-copy">
 			<h1 class="header-name">aleia walker</h1>
-			<h2 class="header-title">Content Creator + Web Designer</h2>
-			<p class="header-skills">#workingtobeawesome</p>
-		</div> <!--div home-copy ended-->	
+			<h2 class="header-copy">Content Creator + Web Designer</h2>
+			<p class="header-copy">#workingtobeawesome</p>
+		</div> <!--div home-copy ended-->
 		<div class="layer"> </div>
 	</div> <!--home-wrapper--->
 
 <!--about div -->
 <div id="about-container">
+	<a href="#"><img src="photos/mini-logo.png" class="toggle-sub" alt="image logo" /></a>
 	<div class="about-copy">
 		<p class="about-title">About Aleia</p>
 		<p class="verse">She is clothed in strength and dignity and laughs without fear of the future.</p>
@@ -79,12 +94,13 @@
 
 <!--work div -->
 	<div id="work-container">
+		<a href="#"><img src="photos/mini-logo.png" alt="image logo" class="toggle-sub" /></a>
 		<div class="container">
             <p class="work-header">Work</p>
 		</div>
 
 		<div class="container">
-			
+
             <ul class="gridder">
                 <li class="gridder-list" data-griddercontent="#gridder-content-1">
                     <img src="portfolio/port_examples/port_smallG.png" class="img-responsive" />
@@ -214,11 +230,12 @@
                         <p>New samples coming soon.</p>
                     </div>
                 </div>
-            </div> 
+            </div>
           </div>
 	</div> <!--div work copy end-->
 <!--contact div -->
 <div id="contact-container">
+	<a href="#"><img src="photos/mini-logo.png" class="toggle-sub" alt="image logo" /></a>
 	<div class="contact-copy">
 		<p class="contact-header">Say Hello!</p>
 		<h3>If you think I would be great for your next <span class="bold">position</span> or <span class="bold">project </span> or  would just like to say <span class="italic">hello</span> please get in touch.</h3>
@@ -237,7 +254,7 @@
 				<a href="http://github.com/msaleia"><img src="photos/github.png" onmouseover="this.src='photos/github-hover.png'" onmouseout="this.src='photos/github.png'" alt="GitHub icon" title='Review my code!'/></a>
 			</li>
 			<li id="linkedin">
-	 		<a href="http://linkedin.com/in/aleiawalker"><img src="photos/linkedin.png" onmouseover="this.src='photos/linkedin-hover.png'" onmouseout="this.src='photos/linkedin.png'" alt="linkedin icon" title='Add me on LinkedIn.'/></a>		
+	 		<a href="http://linkedin.com/in/aleiawalker"><img src="photos/linkedin.png" onmouseover="this.src='photos/linkedin-hover.png'" onmouseout="this.src='photos/linkedin.png'" alt="linkedin icon" title='Add me on LinkedIn.'/></a>
 	 		</li>
 	 		<li id="email">
 				<a href="mailto:aleia@aleiawalker.com"><img src="photos/email.png" onmouseover="this.src='photos/email-hover.png'" onmouseout="this.src='photos/email.png'" alt="email icon" title='Send me an email about your next project or position!'/></a>
@@ -248,33 +265,42 @@
 </div><!--div contact-container ended-->
 </div><!--div wrapper ended-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="gridder-master/dist/js/jquery.gridder.js"></script>
-        <script>
-            jQuery(document).ready(function ($) {
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
-                // Call Gridder
-                $(".gridder").gridderExpander({
-                    scrollOffset: 60,
-                    scrollTo: "panel", // "panel" or "listitem"
-                    animationSpeed: 400,
-                    animationEasing: "easeInOutExpo",
-                    onStart: function () {
-                        console.log("Gridder Inititialized");
-                    },
-                    onExpanded: function (object) {
-                        console.log("Gridder Expanded");
-                        $(".carousel").carousel();
-                    },
-                    onChanged: function (object) {
-                        console.log("Gridder Changed");
-                    },
-                    onClosed: function () {
-                        console.log("Gridder Closed");
-                    }
-                });
-            });
-        </script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="gridder-master/dist/js/jquery.gridder.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+
+        // Call Gridder
+        $(".gridder").gridderExpander({
+            scrollOffset: 60,
+            scrollTo: "panel", // "panel" or "listitem"
+            animationSpeed: 400,
+            animationEasing: "easeInOutExpo",
+            onStart: function () {
+                console.log("Gridder Inititialized");
+            },
+            onExpanded: function (object) {
+                console.log("Gridder Expanded");
+                $(".carousel").carousel();
+            },
+            onChanged: function (object) {
+                console.log("Gridder Changed");
+            },
+            onClosed: function () {
+                console.log("Gridder Closed");
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+  $(document).ready(function() {
+	  $(".toggle").click(function(){
+	  $(".menu-links").slideToggle(100);
+  });
+  });
+</script>
 </body>
 </html>
