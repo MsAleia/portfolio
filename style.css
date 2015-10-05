@@ -102,6 +102,15 @@ a {
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+/* added this style above 
+
+#work-container{
+	background-color: #34343E;
+}*/
+
+>>>>>>> a3d436e7790a111a2ae04f9412ffd712b009528f
 /* menu*/
 .menu li{
     font-size: 1.618em;
@@ -289,7 +298,7 @@ a {
 }
 .about-title {
     margin: 5% auto 0 auto;
-}
+}   
 .about-copy-bio{
     margin: 2.5% 5%;
 }
