@@ -89,11 +89,6 @@ a {
     overflow: hidden;
 }
 
-/* added styles for the container class */
-.container {
-    padding-top: 5%;
-}
-
 #home-wrapper {
    background-image: url('photos/hero_new.jpg');
 }
@@ -101,16 +96,6 @@ a {
     background-image: url('photos/contact_image.jpg');
     color: white;
 }
-
-<<<<<<< HEAD
-=======
-/* added this style above 
-
-#work-container{
-	background-color: #34343E;
-}*/
-
->>>>>>> a3d436e7790a111a2ae04f9412ffd712b009528f
 /* menu*/
 .menu li{
     font-size: 1.618em;
@@ -296,9 +281,9 @@ a {
     font-size: 4.235625em;
     /* 67.77 / 16*/
 }
-.about-title {
+.about-title, .work-header {
     margin: 5% auto 0 auto;
-}   
+}
 .about-copy-bio{
     margin: 2.5% 5%;
 }
