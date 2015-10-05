@@ -71,7 +71,7 @@ a {
     position: relative;
 }
 /* layout specific CSS */
-#home-wrapper, #contact-container, #about-container, #work-container{
+#home-wrapper, #contact-container, #about-container {
 	display: table;
  	background-size: cover;
     background-repeat: no-repeat;
@@ -79,6 +79,21 @@ a {
     min-width: 100%;
     height: 100vh;
 }
+
+/* removed #work-container from above styles and set it's own */
+#work-container{
+	max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #34343E;
+    overflow: hidden;
+}
+
+/* added styles for the container class */
+.container {
+    padding-top: 5%;
+}
+
 #home-wrapper {
    background-image: url('photos/hero_new.jpg');
 }
@@ -86,9 +101,13 @@ a {
     background-image: url('photos/contact_image.jpg');
     color: white;
 }
+
+/* added this style above 
+
 #work-container{
 	background-color: #34343E;
-}
+}*/
+
 /* menu*/
 .menu li{
     font-size: 1.618em;
@@ -274,9 +293,9 @@ a {
     font-size: 4.235625em;
     /* 67.77 / 16*/
 }
-.about-title, .work-header {
+.about-title {
     margin: 5% auto 0 auto;
-}
+}   
 .about-copy-bio{
     margin: 2.5% 5%;
 }

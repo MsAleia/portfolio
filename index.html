@@ -99,7 +99,8 @@
             <p class="work-header">Work</p>
 		</div>
 
-		<div class="container">
+        <!-- Not sure you need this div? 
+		<div class="container"> -->
 
             <ul class="gridder">
                 <li class="gridder-list" data-griddercontent="#gridder-content-1">
@@ -171,7 +172,9 @@
                         <a href="portfolio/email_template/email.html" target="_blank"><img src="portfolio/port_examples/htmlemail.png" class="img-responsive" /></a>
                     </div>
                     <div class="col-sm-6">
+                        <!-- the line below doesn't need a class for the ending tag -->
                         <p class="description">Email Copy</p class="description">
+                        
                         <p></p>
                     </div>
                 </div>
@@ -212,7 +215,10 @@
             <div id="gridder-content-8" class="gridder-content">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="portfolio/port_examples/comingsoonR.jpg" class="img-responsive" /></a>
+                        <img src="portfolio/port_examples/comingsoonR.jpg" class="img-responsive" />
+                        
+                        <!-- extra link ending tag below -->
+                        </a>
                     </div>
                     <div class="col-sm-6">
                         <p class="description">Coming Soon</p>
@@ -231,7 +237,7 @@
                     </div>
                 </div>
             </div>
-          </div>
+          <!-- </div> -->
 	</div> <!--div work copy end-->
 <!--contact div -->
 <div id="contact-container">
@@ -244,6 +250,7 @@
 		<img src= 'photos/aleia_logo.png' alt='aleia logo' />
 	</div> <!--div logo-signature ended-->
 	</div> <!--div contact-copy ended-->
+</div><!--div contact-container ended-->
 	<div class="footer-container">
 		<div class="copyright"><p>&copy;Aleia Walker. 2015. Made by #workingtobeawesome.</p></div>
 		<ul class="social">
@@ -261,8 +268,7 @@
 			</li>
 		</ul>
 	</div> <!--div footer-box ended-->
-	</div><!--div contact-copy ended-->
-</div><!--div contact-container ended-->
+    
 </div><!--div wrapper ended-->
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
