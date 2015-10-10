@@ -79,7 +79,7 @@ html, body{
 	height: 100%;
 	font-family: "Raleway";
 	color: white;
-	background-color: #C6C5C3;
+	background-color: #F7F7F7;
 }
 ul {
 	list-style: none;
@@ -89,14 +89,13 @@ li {
 }
 header, footer{
 	background-color: #565D6C;
-	height: 12.5%;
+	height: 15%;
 }
-
 .border-copy{
 	text-align: center;
-	font-weight: 100;
-	font-size: 2em;
-	padding: .5em;
+	font-weight: 300;
+	font-size: 2.618em;
+    padding: .25em 0;
 }
 .header-title{
 	font-family: "Josefin Slab";
@@ -104,10 +103,10 @@ header, footer{
 }
 #photo-wrapper{
 	position: relative;
-	text-align: center;	
+	text-align: center;
 	margin: 1.5% 0 1.5% 0;
 }
-.block{ 
+.block{
 	height: 50%;
 	display: inline-block;
 }
@@ -124,50 +123,42 @@ img{
 footer{
 	clear: both;
 	width: 100%;
-	overflow: auto;
-	}
+    text-align: center;
+}
 .footer-wrapper{
 	position: absolute;
-}
-.footer-content, .social{
-	width: 100%;
-}
-.footer-content{
-	padding: 1em 0 0 0;
+    width: 100%;
 }
 .footer-copy{
-	font-size: .8em;
-	font-weight: 100;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 1em;
+	font-weight: 300;
+    margin: 2.5% auto 0 auto;
 }
 @media (min-width: 768px){
 .border-copy{
 	text-align: center;
 	font-weight: 500;
 	font-size: 3.235625em;
-	padding: .2em;
+	padding: .5em 0;
 }
-.footer-content, .social{
-	width: 30%;
-	float: left;
+footer{
+	clear: both;
+	width: 100%;
+	overflow: auto;
+    text-align: center;
 }
-.footer-content{
-	padding: 1em 0 0 0;
-	margin: 0 15% 0 10%;
-	}
-.social{
-	margin: 0 0 0 5%;
+.footer-wrapper{
+    width: 95%;
+    margin: 1.25% 2.5%;
 }
-.social-content{
-	padding: 1em 0 0 0;
-	text-align: center;
+.footer-copy, .social-content{
+	width: 35%;
+    float: left;
 }
 .footer-copy{
-	font-weight: 100;
-	width: 80%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+    margin: auto 7.5%;
+}
+.social-content{
+    margin: 1% 7.5%;
 }
 }
