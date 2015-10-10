@@ -99,12 +99,11 @@ h1{
 .photo-block li{
 	width: 90%;
 	height: 10%;
-    margin: 5% 3.5%;
+    margin: 5%;
 }
 .photo-block img {
 	max-width: 100%;
 	max-height: 100%;
-	border: #F7F7F7 .5em solid;
 }
 footer{
 	background-color: #565D6C;
