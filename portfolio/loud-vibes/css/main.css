@@ -1,0 +1,785 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ========================================
+GLOBAL STYLES
+======================================== */
+/*--------------COLORS-------------------*/
+Fuschia: #E92BFF;
+Aqua: #C91FE8;
+Yellow: #feeb23;
+Off Black: #343434;
+Light Gray: #CCCCCC;
+/*--------------COLORS-------------------*/
+body,
+html{
+    font-size: 16px;
+    color: #343434;
+}
+body{
+    background-color: #EEEEEE;
+    font-family: "Quicksand", sans-serif;
+}
+a,
+p a{
+    color: #343434;
+    text-decoration: none;
+}
+a:hover{
+  color: #C91FE8;   
+}
+p a{
+    color: #C91FE8;
+}
+p a:hover{
+    font-weight: 700;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+h1,
+h2,
+h3,
+h4{
+
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+h2{
+    font-family: "Roboto", sans-serif;
+}
+h3{
+   font-family: "Quicksand", sans-serif;
+   font-weight: 700;
+}
+h4{
+
+}
+.btn{
+    background-color: #343434;
+    border: none;
+    border-radius: 10px;
+    color: #28fff7 ;
+    text-transform:uppercase;
+    line-height: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    box-shadow: 2px 2px 0.5px #aeaeae;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    display: block;
+}
+.btn:hover{
+    background-color: #feeb23;
+    color: #343434;
+    box-shadow: 2px 2px 0px #fffac8;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/* ========================================
+HEADER
+======================================== */
+header{
+    width: 100%;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    border-top: 1px solid #343434;
+}
+.top-header{
+    width: 100%;
+    margin: 0 2% ;
+}
+#logo img{
+    width: 100%;
+    margin: auto;
+}
+nav ul{
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 1px solid #343434;
+    font-weight: 400;
+}
+.subnav{
+    display: none;
+}
+/* ========================================
+MAIN CONTENT
+======================================== */
+#main-content{
+    width: 96%;
+    margin: auto;
+}
+/* ========================================
+FEATURED NEWS ITEM
+======================================== */
+.top-story{
+    width: 100%;
+}
+.top-img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.top-info{
+    width: 100%;
+    margin: auto;
+}
+
+/* ========================================
+SIDE BAR
+========================================= */
+.sidebar{
+    width: 100%;
+}
+.sidebar-upcoming,
+.sidebar-faq{
+    display: none;
+}
+.newsletter input{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 5px 0;
+}
+/* ========================================
+NEWS/REVIEWS FEED SECTION
+======================================== */
+.feed{
+    width: 100%;
+}
+.feed-item{
+    clear: both;
+}
+.feed-type{
+    color: #E92BFF;   
+}
+.feed-img{
+    max-width: 300px;
+    min-width: 100px;
+    width: 45%;
+    float: left;
+    margin: 0;
+    padding-right: 3%;
+}
+.news-copy,
+.review-copy{
+    display: none;
+}
+.concert-item{
+    padding-bottom: 150px;
+}
+.feed-copy{
+    width: 45%;
+    float: left;
+}
+.feed-item h2{
+    margin: 0;
+}
+.feed a{
+    font-weight: 400;
+}
+/* ========================================
+DETAIL PAGES
+======================================== */
+.reviews-img,
+.news-img{
+    width: 100%;
+    margin: 0;
+}
+.article-meta-info{
+    margin: 0;
+    padding: 0;
+}
+.article-meta-info li{
+    display: inline-block;
+    margin-right: 2.5%;
+}
+/* ========================================
+ABOUT PAGE
+======================================== */
+.map-container{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    border: solid 5px #343434;
+}
+.map-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.team-img{
+    width:40%;
+    padding-bottom: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px
+    border: 1px solid #ccc;
+    background-color: #3e3e3e;
+    margin: 2.5% 5% 2.5% 0;
+}
+#team-img-lily{
+    background-image: url('../img/contact-founder.jpg'); 
+}
+#team-img-celia{
+    background-image: url('../img/contact-editor.jpg'); 
+}
+#team-img-angela{
+    background-image: url('../img/contact-web-designer.jpg'); 
+}
+.team-description{
+    display: none;
+}
+.team-name{
+    line-height: 0;
+}
+.contact-info ul{
+    padding: 0;
+}
+.contact-info li{
+    line-height: 2.5em;
+}
+/* ========================================
+CONCERT PAGE
+======================================== */
+#concert-feed .feed-item{
+    margin-bottom: 50px;
+}
+.concert-copy{
+    line-height: .5em;
+}
+/* ========================================
+FOOTER
+======================================== */
+footer{
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+footer img{
+    width: 80%;
+    margin: 1em auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+
+/*    HEADER ============================== */
+
+    .top-header{
+        width: 30%;
+        float: left;
+    }
+    nav{
+        width: 60%;
+        float: right;
+        border: none;
+        margin: auto;
+        white-space: nowrap;
+    }
+    nav ul li{
+        border-bottom: none;
+        display: block;
+        float: left;
+        margin: 0 .5em 0 0;
+        line-height: 2.5em;
+    }
+
+ /*    MAIN CONTENT ============================== */
+
+ #main-content{
+    clear: both;
+ }
+ /*    FEATURED NEWS ============================== */
+    .top-story{
+        width: 100%;
+}
+    .top-img{
+        width: 50%;
+        height: auto;
+        float: left;
+    }
+    .top-info{
+        width: 40%;
+        float: right;
+    }
+/*    SIDE BAR ============================== */
+
+    .sidebar{
+        width: 40%;
+        clear: both;
+        float: right;
+    }
+    .sidebar-upcoming,
+    .sidebar-faq{
+        display: block;
+    }
+    .sidebar-detail{
+        width:100%; 
+        clear: both;
+        padding: 2em 0;
+    }
+ /*   .newsletter-review{
+        clear: both;
+    }*/
+    .newsletter-review-copy{
+        width: 60%;
+        float: left;
+        line-height: .3em;
+    }
+    .newsletter-review form{
+        width: 40%;
+        float: right;
+    }
+    .newsletter-review input[type="text"]{
+        display: none;
+    }
+/*    NEWS/REVIEWS ============================== */ 
+    .feed{
+        width: 60%;
+        float: left;
+    }
+    .feed-img{
+        width: 35%;
+    }
+    .review-feed{
+        clear: both;
+        width: 100%;
+    }
+/*    DETAILED PAGES ============================== */
+    .reviews-img,
+    .news-img{
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    .detail-title{
+        width: 50%;
+        float:right;
+    }
+    .aside.detail{
+        width:100%;
+    }
+    .detail .newsletter h2{
+        display: inline;
+    }
+    .detail .newsletter input{
+        display: inline;
+    }
+    .detail-top-copy{
+        width: 50%;
+        float: right;
+    }
+/*    CONCERT PAGE ============================== */
+/*    .concert-item{
+    width: 50%;
+    float: left;
+    }*/
+/*    CONTACT PAGE ============================== */
+    .contact-info{
+        width: 40%;
+        float: left;
+    }
+    .map-container{
+        padding-bottom: 40%;
+        width:58%;
+        float:right;
+        border:5px solid #343434;
+        margin-bottom:40px;
+        margin-top:30px;
+    }
+    .mission{
+        clear: both;
+    }
+    .team-description{
+        display: block;
+    }
+    .team-name{
+        line-height: 1em;
+    }
+/*    FOOTER ==================================== */
+footer{
+    width: 40%;
+}
+}
+
+
+
+@media screen and (min-width: 940px){
+ /*    HEADER ============================== */
+    .top-header{
+    }
+    #logo{
+        width: 60%;
+    }
+    nav{
+        width: 35%;
+    }
+ /*    FEATURED NEWS ============================== */
+    .top-story{
+        width: 60%;
+        float: left;
+        clear: both;
+    }
+    .top-img{
+        width: 100%;
+        float: none;
+    }
+    .top-img img{
+        max-width: 620px;
+    }
+    .feed{
+        width: 100%;
+    }
+    .feed-item{
+        width: 100%;
+    }
+    .feed-img{
+        float: left;
+        width: 35%;
+        height: auto;
+    }
+    .feed-copy{
+        float: left;
+        width: 60%;
+    }
+    .news-copy,
+    .review-copy{
+    display: block;
+}
+    .detail-top-copy{
+        float: none;
+        width: 100%;
+    }
+    .top-info{
+        width: 80%;
+        float: none;
+        margin: 0;
+    }
+       .concert-item{
+        width: 45%;
+        float: left;
+        padding-bottom: 0;
+    }
+    /*.concert-item:nth-child(2n){
+        float: left;
+    }*/
+/*    SIDE BAR ============================== */
+    .sidebar,
+    .sidebar-detail{
+        float: right;
+        width: 35%;
+        clear: none;
+    }
+/*    NEWS/REVIEWS ============================== */ 
+    .newsletter-review-copy{
+        width: 100%;
+        float: none;
+    }
+    .newsletter-review form{
+        width: 100%;
+        float: none;
+    }
+    .news-copy{
+        display: block;
+    }
+ 
+/*    CONTACT PAGE ============================== */
+    .team-name{
+    line-height: 1.75em;
+    }
+    .faq-content{
+        width: 60%;
+    }
+/*    FOOTER ==================================== */
+    footer{
+    width: 35%;
+    clear: both;
+    }
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

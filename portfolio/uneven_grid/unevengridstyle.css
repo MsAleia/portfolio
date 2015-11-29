@@ -86,7 +86,7 @@ header ul{
 	font-size: .5em;
 	margin: 5% 0;
 }
-ul{ 
+ul{
 	padding: 0;
 }
 ul li{
@@ -95,7 +95,6 @@ ul li{
 .name, .title{
 	display: none;
 }
-
 #photo1{
 	width: 100%;
 }
@@ -126,8 +125,8 @@ ul li{
 button{
 	position: absolute;
 	background-color: white;
-	 moz-border-radius: 7.5px;
-  -webkit-border-radius: 7.5px;
+	moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
  	border: 1px solid white;
 	color: mediumblue;
 	transform: translate(-50%, -50%);
@@ -158,21 +157,23 @@ button{
 	overflow: auto;
 	color: white;
 }
-@media (min-width:768px) {
+@media (max-width:968px) {
+    .logo, .search{
+        display: none;
+    }
+    
+}
+@media (min-width:860px) {
 header ul{
 	font-size: 1em;
 }
-ul{ 
+ul{
 	list-style-type: none;
 	padding: 2.5% 0;
 }
 ul li{
 	display: inline-block;
 	margin: 0 5%;
-}
-li img{
-	width: 40px;
-	height: 40px;
 }
 .divider{
 	margin: 2.5% auto;
@@ -182,7 +183,7 @@ li img{
 	width: 80%;
 	line-height: 0;
 	margin: 5% 0 5% 14%;
-}	
+}
 #photo1{
 	width: 45%;
 	position: relative;
@@ -272,7 +273,7 @@ li img{
 	top: 75%;
 	left: 50%;
 	font-size: 1.5em;
-}	
+}
 #photo8-title{
 	top: 60%;
 	left: 50%;
