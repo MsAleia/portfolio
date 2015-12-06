@@ -191,11 +191,11 @@ nav{
 }
 .top-header{
     width: 100%;
-    margin: 0 2% ;
+    margin: auto;
 }
 #logo img{
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 5%;
 }
 nav ul{
     margin: auto;
@@ -288,6 +288,13 @@ NEWS/REVIEWS FEED SECTION
 .feed a{
     font-weight: 400;
 }
+.byline{
+    margin: 0;
+    font-weight: 400;
+}
+span{
+    font-weight: 700;
+}
 /* ========================================
 DETAIL PAGES
 ======================================== */
@@ -374,7 +381,7 @@ footer{
 }
 footer img{
     width: 80%;
-    margin: 1em auto;
+    margin: 1em 10%;
 }
 
 
@@ -474,14 +481,14 @@ footer img{
 /*    HEADER ============================== */
 
     .top-header{
-        width: 30%;
+        width: 50%;
         float: left;
     }
     nav{
         width: 60%;
         float: right;
         border: none;
-        margin: auto;
+        margin: 2% 0;
         white-space: nowrap;
     }
     nav ul li{
@@ -552,6 +559,13 @@ footer img{
     .review-feed{
         clear: both;
         width: 100%;
+    }
+    .article-header h1{
+        margin: 0;
+        line-height: 1.2em;
+    }
+    .detail-story-copy{
+        clear: both;
     }
 /*    DETAILED PAGES ============================== */
     .reviews-img,
@@ -687,10 +701,15 @@ footer{
         width: 100%;
         float: none;
     }
+    .reviews-img, .news-img{
+        width: 100%;
+    }
     .news-copy{
         display: block;
     }
- 
+    .detail-top-copy{
+        clear: both;
+    }
 /*    CONTACT PAGE ============================== */
     .team-name{
     line-height: 1.75em;
