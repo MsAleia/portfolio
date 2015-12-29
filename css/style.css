@@ -355,6 +355,9 @@ MEDIA QUERIES
 .menu-links a{
     display: block;
 }
+.social{
+    width: 50%;
+}
 .toggle{
     margin: 5% auto;
     float: left;
