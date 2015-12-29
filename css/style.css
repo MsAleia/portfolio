@@ -1,0 +1,379 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* define element standards */
+html, body{
+	height: 100%;
+}
+body {
+	padding-bottom: 10%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #f1544a;
+}
+*{
+	margin: 0;
+}
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+/* layout specific CSS */
+#home-wrapper, #contact-container, #about-container {
+	display: table;
+ 	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 100%;
+    height: 100vh;
+}
+
+/* removed #work-container from above styles and set it's own */
+#work-container{
+	max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #34343E;
+    overflow: hidden;
+}
+/* ========================================
+MENU SECTION
+======================================== */
+#home-wrapper {
+   background-image: url('../photos/hero_new.jpg');
+}
+#contact-container{
+    background-image: url('../photos/contact_image.jpg');
+    color: white;
+}
+/* menu*/
+.menu li{
+    font-size: 1.618em;
+    color: white;
+}
+.menu-links li:hover{
+    color: #f1544a;
+}
+.navbar a{
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+/* ========================================
+COPY
+======================================== */
+.header-name{
+    font-family: "Sacramento", cursive;
+    color: #f1544a;
+    font-size: 4.8em;
+    line-height: .5;
+}
+.header-copy{
+    font-weight: 500;
+    font-size: 1.6175em;
+}
+.home-copy{
+    margin: 45% auto;
+    clear: both;
+}
+.about-title, .work-header, .contact-header {
+    font-size: 2.618em;
+    font-family: "Libre Baskerville", serif;
+    clear: both;
+}
+.about-copy {
+    font-weight: 100;
+}
+.about-copy-bio{
+    width: 90%;
+    margin: 5%;
+    font-weight: 100;
+    font-size: 1.618em;
+}
+.work-header{
+    color: white;
+}
+.contact-header{
+    color: #f1544a;
+}
+.contact-copy{
+    margin: 20% auto;
+}
+.contact-copy h3{
+    width: 75%;
+    margin: auto;
+    font-size: 1.618em;
+}
+.bold, .italic{
+    color: #f1544a;
+    weight: 500;
+}
+.italic{
+    font-style: italic;
+}
+/* ========================================
+JQUERY PLUGIN STYLES
+======================================== */
+.gridder{
+	list-style-type:none;
+	width: 98%;
+	margin: 2.5% 1% 5% 1.5%;
+}
+.gridder-list{
+	display:inline-block;
+	vertical-align:center;
+	cursor:pointer;
+	width: 95%;
+	margin: 1% 2.5%;
+}
+.gridder-list img{
+	max-width: 100%;
+}
+.gridder-show{
+	display:block;
+	float:left;
+	width:100%;
+	position:relative;
+	background:#EEE url("../images/loading-spin.svg") no-repeat center;
+}
+.gridder-show.loading{
+	background:#EEE url("../images/loading-spin.svg") no-repeat center;
+}
+.gridder-content{
+	display:none
+}
+.gridder-show{
+	padding:1%;
+	background:#EEE;
+	margin-bottom:1%;
+}
+.gridder-show a{
+	margin: 0 1%;
+	text-decoration: none;
+	color: #34343E;
+}
+.gridder-navigation, .gridder-nav.disabled{
+	opacity:.5
+}
+.gridder-list:hover{
+	opacity:0.8;
+}
+.hasSelectedItem .gridder-list{
+	opacity:0;
+}
+.hasSelectedItem .gridder-list.selectedItem{
+	opacity:1;
+}
+.col-sm-6{
+	float: left;
+	width: 48%;
+	margin: 0 1%;
+}
+.description{
+	vertical-align: top;
+	font-size: 2em;
+	line-height: .75;
+	margin: 0 0 10px 0 ;
+}
+.description-copy{
+    width: 80%;
+    margin: 2.5% 10%;
+}
+.col-sm-6 img{
+	max-width: 100%;
+}
+/* ========================================
+FOOTER SECTION
+======================================== */
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.copyright{
+    width: 95%;
+    margin: 2.5% auto;
+    font-weight: 500;
+    color: white;
+}
+.social{
+	margin: 2.5% auto;
+    width: 25%;
+}
+.social li{
+	margin: 15px;
+    display: inline;
+}
+i{
+    color: #343434;
+}
+i:hover{
+    color: #f1544a;
+}
+
+/* ========================================
+MEDIA QUERIES
+======================================== */
+@media (min-width: 860px){
+/* menu */
+.header-name{
+    font-size: 6.854em;
+}
+.menu{
+    width: 100%;
+}
+.name-logo{
+    float: left;
+    margin: 2.5% 0 0 5%;
+}
+.toggle, .toggle-sub{
+    display: none;
+}
+.menu ul{
+    display: inline;
+    float: right;
+    margin: 3.5% auto 2.5% 0;
+    width: 30%;
+}
+.menu li{
+    margin: 0 1.5%;
+    float: left;
+    list-style: none;
+    color: #34343E;
+}
+/*copy*/
+.home-copy{
+    margin: 20% auto;
+}
+.about-title, .work-header, .contact-header {
+    font-size: 4.235625em;
+    /* 67.77 / 16*/
+}
+.about-title, .work-header {
+    margin: 5% auto 0 auto;
+}
+.about-copy-bio{
+    margin: 2.5% 5%;
+}
+.contact-copy{
+    margin: 10% 5%;
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.contact-copy h3{
+    margin: 2.5% 0;
+    float: right;
+}
+.copyright{
+    float: left;
+    margin: 1.5% 2.5%;
+    width: 45%;
+    font-weight: 700;
+    font-size: 1em;
+}
+.social{
+    float: right;
+    margin: 1.5% 2.5%;
+}
+.gridder{
+    width: 100%;
+	margin: 1% 0;
+}
+.gridder-list{
+    	width: 31.8333%;
+    	margin: .5%;
+}
+}
+@media (max-width: 860px) {
+/* menu */
+.menu{
+    position: relative;
+    display: inline-block;
+}
+.menu-links{
+    display: none;
+}
+.menu li{
+    margin: 1% auto;
+    float: none;
+    display: block;
+    clear: both;
+    font-size: 1.618em;
+}
+.menu-links a{
+    display: block;
+}
+.toggle{
+    margin: 5% auto;
+    float: left;
+    display: inline-block;
+}
+.toggle-sub{
+    margin: 1.5% 2.5%;
+}
+.name-logo{
+    float:left;
+    margin: 4% auto;
+}
+.about-title, .work-header, .contact-header {
+    margin: 0 auto;
+}
+.logo-signature{
+    display: none;
+}
+}
+@media (min-width: 1224px) {
+/* Styles */
+}
