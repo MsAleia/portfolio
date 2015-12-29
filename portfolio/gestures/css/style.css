@@ -1,0 +1,42 @@
+body, html{
+
+}
+
+.container{
+	max-width: 500px;
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	padding: 5%;
+}
+.character-container,
+.character{
+	width: 350px;
+	height: 349px;
+	margin: auto;
+}
+/*h1{
+	color: #a3d3c6;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	border: 1px solid;
+	padding: 5px 10px;
+}
+p{
+	color: #a3d3c6;
+}
+*/.character{
+	background-image: url(../img/stand.png);
+}
+
+.jump{
+	background-image: url(../img/jump.png);
+}
+
+.swipe-left{
+	background-image: url(../img/left.png);
+}
+
+.swipe-right{
+	background-image: url(../img/right.png);
+}
